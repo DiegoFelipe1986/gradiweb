@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$primary-color: #FFDCD3;
+$black: #000000;
+
+.title{
+    font-family: "Abhaya Libre", serif;
+    color: $black;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 61.6px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+}
+
+.box1, .box2 {
+    flex: 1;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .second-container {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .title{
+
+      font-size: 27px;
+      line-height: 35.84px;
+  }
+
+  .box2 {
+    margin-top: -40px;
+  }
+}
+
+.slides-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+
+  .slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-slide {
+    flex: 0 0 320px;
+    width: 320px;
+    height: auto;
+    margin-right: 10px;
+    position: relative;
+
+  }
+
+  .box1 {
+    position: relative;
+
+    h2 {
+      font-family: "Abhaya Libre", serif;
+      color: $black;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 61.6px;
+      position: relative;
+      @media (max-width: 768px) {
+        font-size: 27px;
+        line-height: 35.84px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 24px;
+        background-color: #CAF0FF;
+        bottom: 60px;
+        left: -30px;
+        border-radius: 12px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    .button {
+      background-color: #fff;
+      color: #000;
+      padding: 10px 13px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 15px;
+      line-height: 1;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+      margin: 0 10px;
+      .marker {
+        position: absolute;
+        width: 160%;
+        height: 20px;
+        background-color: $primary-color;
+        bottom: 8px;
+        border-radius: 10px;
+        z-index: -1;
+        top: 8px;
+        left: -10px;
+        margin-right: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+    }
+  }
+  @media (max-width: 768px) {
+    .box2{
+      margin-top: 0px;
+    }
+  }
+  .button:first-child {
+    margin-right: 10px;
+  }
+
+  .button:last-child {
+    margin-left: 10px;
+  }
+
+  .button::before {
+    content: '❮';
+  }
+
+  .button:last-child::before {
+    content: '❯';
+  }
+
+
+.slide-info-title{
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gray-text {
+  color: #939393;
+}
+
+.black-text {
+  color: black;
+}
+
+.price {
+  margin-left: 10px;
+}

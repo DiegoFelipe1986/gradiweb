@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$primary-color: #FFDCD3;
+
+.main-container {
+    width: 100%;
+    min-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .second-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+@media (max-width: 767px) {
+    .main-container {
+        min-width: auto;
+    }
+    .second-container {
+        width: 100%;
+    }
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.centered-button {
+    background-color: #EFA693;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    width: 237px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

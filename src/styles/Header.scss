@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+$primary-color: #FFDCD3;
+$black: #000000;
+
+.header {
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    color:$black;
+    font-size: 13px;
+    text-transform: uppercase;
+    height: 32px;
+    line-height: 32px;
+  }
